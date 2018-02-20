@@ -1,6 +1,29 @@
 @media only screen and (min-width: 37.5em) {
   /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
-  .topnav a:not(:first-child) {display: none;}
+  
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+    
+    topnav a:hover {
+    background-color: #ddd;
+        color: black;}
+    
+    .active {
+    background-color: lightgrey;
+        color: white;}
+    .topnav .icon {
+    display: none;
+}
+    
+    
+    .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
     display: block;

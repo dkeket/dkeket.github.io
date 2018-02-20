@@ -27,14 +27,16 @@ header h1 {
     width: 100%;
     clear:none;}
 header img {
-    margin: 0px 500px 0px;
+    margin: 0px 50px 0px;
     padding: 0;
-    float: ;
+    float: center;
+    clear:both;
 }
 header .subheading {
     text-decoration: none;
     color: white;
-    padding: 0PX 470px 0;
+    padding: 0PX px 0;
+    float: center
 }
 
 nav {}
@@ -121,5 +123,3 @@ footer {
 }
 footer aside {}
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
-
-/* Other Class Selectors */
