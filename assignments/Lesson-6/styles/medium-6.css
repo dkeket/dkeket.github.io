@@ -1,6 +1,23 @@
 @media only screen and (min-width: 37.5em) {
   /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
-  
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+    }
+    
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
     header, nav, main, footer {}
   
   nav button { display:none; }  /* hamburger button does not need to be shown */

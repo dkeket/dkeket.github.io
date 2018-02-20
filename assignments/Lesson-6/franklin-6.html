@@ -7,20 +7,17 @@
     <meta name="author" content="Deklin Keket">
     <meta name="description" content="Weather forecast site for the cities of Franklin, Greenville and Springfied">
     <!-- external style references in the proper cascading order -->    
-    <link href="https://fonts.googleapis.com/css?family=#" rel="stylesheet">  <!-- Google API font reference -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">  <!-- Google API font reference -->
     <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
-    <link href="styles/main-5.css" rel="stylesheet">    <!-- default styles - small/phone views -->
-    <link href="styles/medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
-    <link href="styles/large-5.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+    <link href="styles/main-6.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+    <link href="styles/medium-6.css" rel="stylesheet">  <!-- medium/tablet views -->
+    <link href="styles/large-6.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
 </head>
 <body>
 
     <header>
-        <div class="log">
-        <img src="image/WeatherCAST-logo.png" alt="The site logo" width="100" height="100">
-        </div>
-        <h1>Forecast for Franklin City</h1>
-        <div class="subheading">YOUR FIRST STOP FOR PLANNING A GREAT DAY!</div>
+        <img src="images/logo1.png" alt="The site logo" width="150" height="150">
+        <div class="subheading">WHERE YOUR DAY BEGIN'S!</div>
     </header>
 
     <!-- site navigation use placeholder references -->
@@ -37,34 +34,34 @@
     </nav>
     
       <main>
-          <br>
-       
         <figure>
-            <br><h2>The City of Franklin</h2>
-          <img src="image/Franklin1.png" width=100% height= 300> 
+          <img src="images/Franklin-large.jpeg" width=100% height= 300> 
         </figure>
-          <br>
         <section>
-          <h3>Weather Summary</h3>  
-            <div class="current forecast">
-            Sunny
+          <h1>FORECAST FOR FRANKLIN CITY</h1>
+          <h3>WEATHER SUMMARY</h3>
+            <div class="weather icon">
             <picture>
-                <img src="image/sun.png" alt="weather icon" width="200" height="200">
+                <img src="images/sun.png" alt="weather icon" width="50" height="50">
             </picture>
+            </div>
+            
+        
+          <div class="current forecast">
+            Sunny
           </div>  
           <div class="highlow">
             <p>High: 89&deg;F</p>  
-            <p>Low:70&deg;F</p>  
+            <p>Low: 70&deg;F</p>  
           </div> 
           <div class="conditions">
-            <p>Precipitation:10%</p>  
+            <p>Precipitation: 10%</p>  
             <p>Wind Speed: 4mph NW</p>  
           </div>           
         </section>
 
         <section class="forecast">
           <h3>10 Day Forecast</h3>
-          <table>
           <table>
             <thead>
               <tr>
@@ -98,13 +95,21 @@
         </section>
 
         <article>
-          <h3>Franklin Breaks Record</h3>	
+          <h3>FRANKLIN CITY</h3>	
           <p class="town-article">
             <img src="images/#" alt="" width="" height="">
-            Lorum Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.short article content placeholder
-              <br>
-            Lorum Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.short article content placeholder
-          </p>
+            Franklin City located on the Brightston mountain range is one of three cities (Franklin, Greenvilee and Springfield) in the region that boasts some of the most breath taking views with alot of activities for the family. 
+            
+            <p>
+            Franklin's freshwater lake provides the idle destination for those that seek fishing, jet sking, tubing or just the simple sand castle building for the family on the sandy shore. 
+            </p>
+           
+            <p>
+            With a rich history of the area being settled in the 1800's you can vist the old town and see the old architectural town or visit the art galleries. Franklin offer also walking trails for beginners to pros as you walk the old pioneer tracks down to the beach where they sailed in on boats.
+            </p>
+            
+            For more information on accomodations and more fun activities please contact the Franklin Tourism Center @ (123) 456-7890 or email tours@franklin.com. For more pictures of Franklin check out our gallery.
+            
             </article>		  
 
       </main>
@@ -113,9 +118,9 @@
         <aside>
           For more information contact us: info@weathercast.com or (XXX) xxx-xxxx
         </aside>
-        <p class="footer-bar">&copy;2018 All Rights Reserved | WeatherCAST | <span id="currentdate">Febuary 10th, 2018</span></p>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | WeatherCAST | <span id="currentdate" ></span></p>
+        
       </footer>
-
       <script src="scripts/hamburger.js"></script>
       <script src="scripts/currentdate.js"></script>
 
