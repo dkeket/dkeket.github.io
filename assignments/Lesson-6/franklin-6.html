@@ -15,34 +15,35 @@
 </head>
 <body>
 
-    <header>
+    <header class= clearfix>
         <img src="images/logo1.png" alt="The site logo" width="150" height="150">
         <div class="subheading">WHERE YOUR DAY BEGIN'S!</div>
     </header>
 
     <!-- site navigation use placeholder references -->
-    <nav>
-        <button onclick="toggleNavMenu()">&#9776;</button>
-        <ul class="topnav" id="myTopnav">
+    <nav class=clearfix>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
             <li><a href="#">Home</a></li>
             <li class="active"><a href="#">Franklin</a></li>
-            <li><a href="#">Greenville</a></li>
-            <li><a href="#">Springfield</a></li>
-            <li><a href="#">Storm Center</a></li>
-            <li><a href="#">Gallery</a></li>
+            <li><a href="#Greenville">Greenville</a></li>
+            <li><a href="#Springfield">Springfield</a></li>
+            <li><a href="#Storm">Storm Center</a></li>
+            <li><a href="#Gallery">Gallery</a></li>
         </ul>		
     </nav>
     
       <main>
         <figure>
-          <img src="images/Franklin-large.jpeg" width=100% height= 300> 
+          <source srcset= "images/fraknlin-small.jpeg 1x, images/franklin-medium.jpeg 2x, images/franklin-large.jpeg 3x">
+          <img src="images/franklin-large.jpeg" alt="Franklin City1" > 
         </figure>
         <section>
           <h1>FORECAST FOR FRANKLIN CITY</h1>
           <h3>WEATHER SUMMARY</h3>
             <div class="weather icon">
             <picture>
-                <img src="images/sun.png" alt="weather icon" width="50" height="50">
+                <img src="images/sun.png" alt="weather icon">
             </picture>
             </div>
             
@@ -97,7 +98,7 @@
         <article>
           <h3>FRANKLIN CITY</h3>	
           <p class="town-article">
-            <img src="images/#" alt="" width="" height="">
+          
             Franklin City located on the Brightston mountain range is one of three cities (Franklin, Greenvilee and Springfield) in the region that boasts some of the most breath taking views with alot of activities for the family. 
             
             <p>
@@ -116,7 +117,7 @@
     
       <footer>
         <aside>
-          For more information contact us: info@weathercast.com or (XXX) xxx-xxxx
+          For more information contact us: info@weathercast.com or (007) 123-4567
         </aside>
         <p class="footer-bar">&copy;2018 All Rights Reserved | WeatherCAST | <span id="currentdate" ></span></p>
         
