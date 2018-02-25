@@ -37,7 +37,8 @@ header .subheading {
     margin: 0 8px;
 }
 
-nav {background-color: #ccc;
+nav {background-color: #D4EDF7;
+    margin: 0;
 }
 nav button {
     margin: .2rem 2%;
