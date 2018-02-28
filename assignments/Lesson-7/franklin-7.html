@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WeatherCast</title>
+    <meta name="author" content="Deklin Keket">
+    <meta name="description" content="Weather forecast site for the cities of Franklin, Greenville and Springfied">
+    <!-- external style references in the proper cascading order -->    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">  <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+    <link href="styles/Small-7.css" rel="stylesheet"><!-- default styles - small/phone views -->   
+    <link href="styles/medium-7.css" rel="stylesheet">  <!-- medium/tablet views -->
+    <link href="styles/large-7.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body class="body">
+    <header>
+        <img class="image" src="images/logo1-min.png" alt="The site logo">
+        <div class="subheading">WHERE YOUR DAY BEGIN'S!</div>
+    </header>
+    <!-- site navigation use placeholder references -->
+    <nav id="nav" class=clearfix>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="home.html">Home</a></li>
+            <li class="active"><a href="franklin.html">Franklin</a></li>
+            <li><a href="greenville.html">Greenville</a></li>
+            <li><a href="springfield.html">Springfield</a></li>
+            <li><a href="storm.html">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+        </ul>		
+    </nav>
+    <main class="main">
+        <picture>
+            <source srcset= "images/fraknlin-small.jpeg 1x, images/franklin-medium.jpeg 2x, images/franklin-large.jpeg 3x">
+                <img src="images/franklin-large.jpeg" alt="Franklin City1" > 
+        </picture>
+        <section>
+            <h1>FORECAST FOR FRANKLIN CITY</h1>
+            <h3>WEATHER SUMMARY</h3>
+                <div class="weather icon">
+                    <figure>
+                        <img src="images/sun.png" alt="weather icon">
+                    </figure>
+                </div>
+                <div class="current forecast">Sunny</div>  
+                <div class="highlow">
+                    <p>High: <span id="highT">89</span>&deg;F</p>  
+                    <p>Low: <span id="lowT">70</span>&deg;F</p>  
+                </div> 
+                <div class="conditions">
+                    <p>Precipitation: 10%</p>  
+                    <p>Wind Speed: <span id= windS>4</span>mph NW</p>
+                    <p>Wind Chill: <span id ="windchill"></span></p>
+                </div>           
+        </section>
+        <section class="forecast">
+            <h3>10 Day Forecast</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Day 1</th>
+                    <th>Day 2</th>
+                    <th>Day 3</th>
+                    <th>Day 4</th>
+                    <th>Day 5</th>
+                    <th>Day 6</th>
+                    <th>Day 7</th>
+                    <th>Day 8</th>
+                    <th>Day 9</th>
+                    <th>Day 10</th>
+                  </tr>
+                </thead>
+                <tbody>  
+                  <tr>
+                    <td>89&deg;F</td>
+                    <td>87&deg;F</td>
+                    <td>78&deg;F</td>
+                    <td>75&deg;F</td>
+                    <td>72&deg;F</td>
+                    <td>72&deg;F</td>
+                    <td>79&deg;F</td>
+                    <td>83&deg;F</td>
+                    <td>85&deg;F</td>
+                    <td>89&deg;F</td>
+                  </tr>
+                </tbody>
+              </table>
+        </section>
+        <article>
+            <h3>FRANKLIN CITY</h3>	
+            <p class="town-article">
+          
+            Franklin City located on the Brightston mountain range is one of three cities (Franklin, Greenvilee and Springfield) in the region that boasts some of the most breath taking views with alot of activities for the family. 
+            
+            <p>
+            Franklin's freshwater lake provides the idle destination for those that seek fishing, jet sking, tubing or just the simple sand castle building for the family on the sandy shore. 
+            </p>
+           
+            <p>
+            With a rich history of the area being settled in the 1800's you can vist the old town and see the old architectural town or visit the art galleries. Franklin offer also walking trails for beginners to pros as you walk the old pioneer tracks down to the beach where they sailed in on boats.
+            </p>
+            
+            For more information on accomodations and more fun activities please contact the Franklin Tourism Center @ (123) 456-7890 or email tours@franklin.com. For more pictures of Franklin check out our gallery. 
+        </article>		  
+    </main>
+    <footer class="footer">
+        <aside>
+          For more information contact us: info@weathercast.com or (007) 123-4567
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | WeatherCAST | <span id="currentdate" ></span></p>
+        
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
+
+</body>
+</html>

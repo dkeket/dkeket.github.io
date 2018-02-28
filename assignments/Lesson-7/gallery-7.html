@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WeatherCast</title>
+    <meta name="author" content="Deklin Keket">
+    <meta name="description" content="Weather forecast site for the cities of Franklin, Greenville and Springfied">
+    <!-- external style references in the proper cascading order -->    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">  <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+    <link href="styles/Small-7.css" rel="stylesheet"><!-- default styles - small/phone views -->   
+    <link href="styles/medium-7.css" rel="stylesheet">  <!-- medium/tablet views -->
+    <link href="styles/large-7.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+    <header>
+        <img class="image" src="images/logo1-min.png" alt="The site logo">
+        <div class="subheading">WHERE YOUR DAY BEGIN'S!</div>
+    </header>
+    <!-- site navigation use placeholder references -->
+    <nav id="nav" class=clearfix>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="franklin-7.html">Franklin</a></li>
+            <li><a href="greenville.html">Greenville</a></li>
+            <li><a href="springfield.html">Springfield</a></li>
+            <li><a href="storm.html">Storm Center</a></li>
+            <li class="active"><a href="gallery-7.html">Gallery</a></li>
+        </ul>		
+    </nav>
+    <main class="main">
+        <div><img src="images/franklingal1-small.jpeg" alt="lake1" srcset="images/fraknlingal1-small.jpeg 1x, images/franklingal1-medium.jpeg 2x, images/franklingal1-large.jpeg 3x"><p>Above: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        </div>
+        <div><img src="images/franklingal2-small.jpeg" alt="lake2" srcset="images/fraknlingal2-small.jpeg 1x, images/franklingal2-medium.jpeg 2x, images/franklingal2-large.jpeg 3x"><p>Above: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        </div>
+        <div><img src="images/franklingal3-small.jpeg" alt="lake3" srcset="images/fraknlingal3-small.jpeg 1x, images/franklingal3-medium.jpeg 2x, images/franklingal3-large.jpeg 3x"><p>Above: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        </div>
+        <div><img src="images/franklingal4-small.jpeg" alt="lake4" srcset="images/fraknlingal4-small.jpeg 1x, images/franklingal4-medium.jpeg 2x, images/franklingal4-large.jpeg 3x"><p>Above: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        </div>
+        <div><img src="images/franklingal5-small.jpeg" alt="lake5" srcset="images/fraknlingal5-small.jpeg 1x, images/franklingal5-medium.jpeg 2x, images/franklingal5-large.jpeg 3x"><p>Above: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        </div>
+        <div><img src="images/franklingal6-small.jpeg" alt="lake6" srcset="images/fraknlingal6-small.jpeg 1x, images/franklingal6-medium.jpeg 2x, images/franklingal6-large.jpeg 3x"><p>Above: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        </div>
+    </main>
+    <footer class="footer">
+        <aside>
+          For more information contact us: info@weathercast.com or (007) 123-4567
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | WeatherCAST | <span id="currentdate" ></span></p>     
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+</body>
+</html>
