@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>tables</title>
+    <meta name="author" content="Deklin Keket">
+</head>
+<body>
+    <header>
+    </header>
+   <style>
+       table{
+           box-shadow: 8px 8px 10px #628ca6;
+       }
+table, th, td {
+    border: 1px solid lightgrey;
+    border-collapse: collapse;
+    font-family: Ubuntu, sans-serif;
+    box-shadow: 
+}
+th, td {
+    padding: 5px;
+    text-align: center;
+}
+.title{ 
+    background: #7fb9c2;
+       }
+.mainrow{
+    color: white;
+    background-color: #628ca6;
+}
+#bf{font-style: italic;}       
+#odd{
+     background-color: #628ca6;
+    color: white;
+}
+       .r1{ 
+       background-color: #e7f0ed;}
+       .r2{ 
+       background-color: #e7ffed;}
+       .r3{ 
+       background-color: #e7f0ed;}
+       .r4{ 
+       background-color: #e7ffed;}
+       .r5{ 
+       background-color: #e7f0ed;}
+       .r6{ 
+       background-color: #e7ffed;}
+       .r7{ 
+       background-color: #7fb9c2;
+       font-size: x-small;}
+</style>
+ 
+    <main>
+        <section >
+              <table>
+                <thead>
+                  <tr>
+                    <th colspan="3" class="title">ACME Wildwest</th>
+                  </tr>
+                  <tr class="mainrow">
+                    <th>Period</th>
+                    <th>Sales</th>
+                    <th>Sales Goal</th>
+                  </tr>
+                </thead>
+                <tbody>  
+                  <tr class="r1">
+                    <td>August</td>
+                    <td>$3,590</td>
+                    <td>$4,000</td>
+                  </tr>
+                  <tr class="r2">
+                    <td>September</td>
+                    <td>$4,420</td>
+                    <td>$5,000</td>
+                  </tr>
+                    <tr class="r3">
+                    <td>October</td>
+                    <td>$4,870</td>
+                    <td>$5,000</td>
+                  </tr>
+                    <tr class="r4">
+                    <td>November</td>
+                    <td>$8,610</td>
+                    <td id="odd">$7,500</td>
+                  </tr>
+                    <tr class="r5">
+                    <td id="bf">Black Friday</td>
+                    <td colspan="3">$3,200</td>
+                  </tr>
+                    <tr class="r6">
+                    <td>December</td>
+                    <td>$6,820</td>
+                    <td>$7,500</td>
+                  </tr >
+                </tbody>
+                <tfoot>
+                    <tr class="r7">
+                    <td colspan="3">Compiled 12.20.2020 bRauls</td>
+                    </tr>
+                </tfoot>
+              </table>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
